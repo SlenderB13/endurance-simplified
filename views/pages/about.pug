@@ -1,0 +1,47 @@
+extends ../template.pug
+
+block variables
+  - var template = 'about'
+
+block content
+  .about
+    .about__wrapper
+      section.about__gallery
+        .about__gallery__wrapper
+          each media in about.data.about_gallery
+            figure.about__gallery__media
+              img.about__gallery__image(alt=media.about_gallery_image.alt data-src=media.about_gallery_image.url)
+
+      each section in about.data.body
+        if section.slice_type == 'title'
+          h2.about__title=section.primary.title_text
+
+        if section.slice_type == 'content'
+          section.about__content
+            .about__content__wrapper
+              p.about__content__label=section.primary.content_label
+
+              .about__content__description
+                p.about__content__description__text=section.primary.content_text
+
+              figure.about__content__media
+                img.about__content__media__image(data-src=section.primary.content_image.url)
+
+        if section.slice_type == 'highlight'
+          section.about__highlight
+            .about__highlight__wrapper
+              if section.primary.highlight_label
+                p.about__highlight__label=section.primary.highlight_label
+
+              h3.about__highlight__title=section.primary.highlight_text
+
+              each media in section.items
+                figure.about__highlight__media
+                  img.about__highlight__media__image(data-src=media.highlight_image.url)
+
+        if section.slice_type == 'gallery'
+          section.about__gallery
+            .about__gallery__wrapper
+              each media in section.items
+                figure.about__gallery__media
+                  img.about__gallery__media__image(data-src=media.gallery_image.url)

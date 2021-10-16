@@ -1,0 +1,36 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(100vw / 1920 * 10);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  @extend %description-12;
+
+  font-family: $font-suisse-bp;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: middle;
+}

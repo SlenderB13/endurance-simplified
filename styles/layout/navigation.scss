@@ -1,0 +1,45 @@
+.navigation {
+  @extend %title-30;
+
+  color: $color-quarter-spanish-white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  padding: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  a {
+    flex: 1;
+  }
+}
+
+.navigation__link__icon {
+
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  width: 12%;
+}
+
+.navigation__list__item {
+  flex: 1;
+}
+
+.navigation__list__item__link {
+
+}
+
+.navigation__link__item {
+
+}
+
+.navigation__list__item__link {
+
+}

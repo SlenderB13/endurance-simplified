@@ -27,3 +27,45 @@
     height: inherit;
     object-fit: cover;
 }
+
+.home__titles {
+    color: #1F1F1F;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(-15deg);
+}
+
+.home__titles__title {
+    font-family: $font-glamore;
+    font-size: 18.5rem;
+    margin: auto 9.2rem;
+
+    &::after {
+        content: 'collection';  
+        font-size: 2.5rem;
+        position: absolute;
+        top: calc(100%);
+    }
+
+    &:nth-child(1)::after {
+        left: calc(20% - 8rem)
+    }
+
+    &:nth-child(2)::after {
+        left: calc(40% - 8rem)
+    }
+
+    &:nth-child(3)::after {
+        left: calc(60% - 8rem)
+    }
+
+    &:nth-child(4)::after {
+        left: calc(80% - 8rem)
+    }
+
+    &:nth-child(5)::after {
+        left: calc(100% - 8rem)
+    }
+}

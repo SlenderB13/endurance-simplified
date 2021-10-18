@@ -7,21 +7,10 @@ import Preloader from 'components/Preloader'
 
 class App {
   constructor () {
-    this.createPreloader()
     this.createContent()
     this.createPages()
     this.addLinkListeners()
     this.update()
-  }
-
-  onPreloaded () {
-    this.preloader.hide()
-    this.preloader.destroy()
-  }
-
-  createPreloader () {
-    this.preloader = new Preloader()
-    this.preloader.once('completed', this.onPreloaded.bind(this))
   }
 
   createContent () {

@@ -15,9 +15,6 @@ html {
 }
 
 body {
-  @extend %description-12;
-
-  font-family: $font-suisse-bp;
   position: fixed;
   left: 0;
   top: 0;

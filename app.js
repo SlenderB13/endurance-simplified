@@ -9,6 +9,7 @@ app.use(express.static(path.join(__dirname, 'public'))) // Export the styles fil
 
 const Prismic = require('@prismicio/client')
 const PrismicDOM = require('prismic-dom')
+const { each, map } = require('lodash')
 
 const initApi = req => {
   return Prismic.getApi(process.env.PRISMIC_ENDPOINT, {
@@ -51,22 +52,29 @@ app.set('view engine', 'pug')
 
 app.get('/', async (req, res) => {
   const api = await initApi(req)
-  const home = await api.getSingle('home')
+  const home = await api.query(Prismic.Predicates.at('document.type', 'home'), {
+    orderings: '[images]'
+  })
+
+  const medias = home.results[0].data
+  const gallery = []
+
+  for(let i = 0; i <= 4; i++) {
+    const image = medias.gallery[i].image.url
+    gallery.push(image)
+  }
 
   res.render('pages/home', {
-    home
+    home,
+    gallery
   })
 })
 
-app.get('/about', (req, res) => {
-  initApi(req).then(async api => {
-    const about = await api.getSingle('about')
-    res.render('pages/about', {
-      about
-    })
-  })
-})
 
+
+/* app.get('/', async (req, res) => {
+  res.render('pages/home')
+}) */
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)

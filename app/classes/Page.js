@@ -68,10 +68,10 @@ export default class Page {
 
   update () {
     this.scroll.current = GSAP.utils.interpolate(this.scroll.current, this.scroll.target, 0.1)
-
+/* 
     if (this.elements.wrapper) {
       this.elements.wrapper.style[this.transformPrefix] = `translateX(${this.scroll.current}px)`
-    }
+    } */
   }
 
   onMouseWheel (event) {

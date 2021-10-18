@@ -1,1 +1,7 @@
-// all the imports goes here
+@import './base/reset';
+@import './base/base';
+
+@import './utils/variables';
+@import './base/fonts';
+
+@import './pages/home.scss'

@@ -1,0 +1,29 @@
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__wrapper {
+
+}
+
+.home__gallery {
+    display: flex;
+    border: 1px solid #000;
+    transform: rotateZ(15deg);
+}
+
+.home__gallery__media {
+    width: 44.7rem;
+    height: 28.7rem;
+    margin: 4rem 4.34rem;
+}
+
+.home__gallery__media__image {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}

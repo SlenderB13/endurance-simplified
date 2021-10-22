@@ -37,11 +37,16 @@
     transform: translate(-50%, -50%) rotateZ(-15deg);
 }
 
+.home__titles__wrapper {
+    display: flex;
+    position: inherit;
+}
+
 .home__titles__title {
     font-family: $font-glamore;
     font-size: 18.5rem;
     margin: auto 9.2rem;
-
+    
     &::after {
         content: 'collection';  
         font-size: 2.5rem;
@@ -68,4 +73,14 @@
     &:nth-child(5)::after {
         left: calc(100% - 8rem)
     }
+}
+
+.home__tip__text {
+    font-family: $font-six-caps;
+    font-size: 3rem;
+    color: #6D6D6D;
+    position: absolute;
+    top: 6.2rem;
+    left: 13.32rem;
+    transform: rotateZ(15deg);
 }

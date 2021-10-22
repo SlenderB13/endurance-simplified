@@ -1,12 +1,9 @@
 import About from './pages/About'
-import Detail from './pages/Detail'
-import Collections from './pages/Collections'
 import Home from './pages/Home'
 import { each } from 'lodash'
-import Preloader from 'components/Preloader'
 
 class App {
-  constructor () {
+  constructor () {    
     this.createContent()
     this.createPages()
     this.addLinkListeners()
@@ -21,9 +18,7 @@ class App {
   createPages () {
     this.pages = {
       home: new Home(),
-      collections: new Collections(),
       about: new About(),
-      detail: new Detail()
     }
 
     this.page = this.pages[this.template]

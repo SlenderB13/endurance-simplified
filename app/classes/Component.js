@@ -28,7 +28,7 @@ export default class Component extends EventEmitter {
 
         if (this.elements[key].lenght === 0) {
           this.elements[key] = null
-        } else if (this.elements[key] === 1) {
+        } else if (this.elements[key].lenght === 1) {
           this.elements[key] = document.querySelector(entry)
         }
       }

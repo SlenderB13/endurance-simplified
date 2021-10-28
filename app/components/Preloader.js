@@ -8,27 +8,30 @@ export default class Preloader extends Component {
     super({
       element: '.preloader',
       elements: {
-        title: document.querySelector('.preloader__text'),
+        title: document.querySelector('.preloader__text__title'),
         number: document.querySelector('.preloader__number'),
         images: document.querySelectorAll('img')
       }
     })
+    console.log(this.elements.title)
 
     this.length = 0
 
     this.createLoader()
 
     split({
-      element: this.elements.title,
-      expression: '<br>'
+      element: this.elements.title
     })
 
     split({
       element: this.elements.title,
-      expression: '<br>'
     })
 
-    this.elements.titleSpans = this.elements.title.querySelectorAll('span span')
+    split({
+      element: this.elements.title,
+    })
+
+    this.elements.titleSpans = this.elements.title.querySelectorAll('span span span')
   }
 
   onAssetLoaded (image) {
@@ -44,12 +47,16 @@ export default class Preloader extends Component {
 
   createLoader () {
     each(this.elements.images, element => {
-      element.src = element.getAttribute('data-src')
+      element.src = element.getAttribute('src')
       element.onload = _ => this.onAssetLoaded(element)
     })
   }
 
   onLoaded () {
+
+    // TODO: ADD THE ANIMATIONS AFTER THE PAGE IS LOADED
+
+    
     return new Promise(resolve => {
       /*  this.animateOut.to(this.element, {
         autoAlpha: 0,
@@ -59,16 +66,24 @@ export default class Preloader extends Component {
       this.animateOut = gsap.timeline()
 
       this.animateOut.to(this.elements.titleSpans, {
-        stagger: 0.1,
-        duration: 1.5,
+        stagger: 0.03,
+        duration: 2,
         ease: 'expo.out',
-        y: '100%'
+        y: '-100%',
+        delay: 0.5
+      })
+
+
+      this.animateOut.to(this.elements.number, {
+        autoAlpha: 0,
+        ease: 'expo.out',
+        duration: 1
       })
 
       this.animateOut.to(this.element, {
-        scaleY: 0,
-        transformOrigin: '0 0',
-        ease: 'expo.out'
+        autoAlpha: 0,
+        ease: 'expo.out',
+        duration: 1
       })
     })
   }

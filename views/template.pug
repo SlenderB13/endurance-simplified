@@ -16,8 +16,10 @@ html(lang="en")
 
   body
     include ./partials/navigation.pug
-
+    include ./partials/preloader.pug
+    include ./partials/cursor.pug
+    
     .content(data-template=template)
       block content
-
+    
     script(src="main.js" type="module")

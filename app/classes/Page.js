@@ -22,6 +22,8 @@ export default class Page {
 
     this.addEventListeners()
 
+    this.getCursor()
+
     //this.onMouseWheel()
 
     // this.onMouseWheelEvent = this.onMouseWheel.bind(this)
@@ -74,27 +76,13 @@ export default class Page {
     })
   }
 
-  /* onMouseWheel (event) {
-    const { deltaY } = event
-    this.scroll.target += deltaY
-
-    console.log(this.scroll.target)
-    // FIXME: THE SCROLL VALUE NOT UPDATING   
-  } */
-
   update () {
     this.scroll.current = GSAP.utils.interpolate(this.scroll.current, this.scroll.target, 0.1)
     this.scroll.current = GSAP.utils.clamp(0, this.scroll.limit, this.scroll.current)
 
-    // TODO: FIGURE OUT HOW TO IMPLEMENT THE FOREACH HERE.
-
     each(this.elements, item => {
       item.style[this.transformPrefix] = `-${this.scroll.current}px`
     })
-    
-    /* if (this.elements.wrapper) {
-      this.elements.wrapper.style[this.transformPrefix] = `translateX(${this.scroll.current}px)`
-    } */  
   }
 
   addEventListeners () {
@@ -102,5 +90,18 @@ export default class Page {
       const { deltaY } = event
       this.scroll.target += deltaY
     })
+
+    window.addEventListener('mousemove', (event) => {
+      this.cursor.style.left = GSAP.utils.interpolate(
+        this.cursor.style.left, event.clientX + 'px', 0.1
+        )
+      this.cursor.style.top = GSAP.utils.interpolate(
+        this.cursor.style.top, event.clientY + 'px', 0.1
+        )
+    })
+  }
+
+  getCursor () {
+    this.cursor = document.querySelector('.cursor')  
   }
 }

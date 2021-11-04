@@ -70,7 +70,9 @@ app.get('/', async (req, res) => {
   })
 })
 
-
+app.get('/contact', async(req, res) => {
+  res.render('pages/contact')
+})
 
 /* app.get('/', async (req, res) => {
   res.render('pages/home')

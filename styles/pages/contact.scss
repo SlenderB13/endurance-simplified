@@ -1,0 +1,95 @@
+.contact {
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    margin-top: 12rem;
+}
+
+.contact__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__left__instagram {
+    width: 150%;
+    background-color: #1f1f1f;
+    color: #f2f2f2;
+    transform: rotateZ(-90deg);
+    position: absolute;
+    top: 0;
+    right: 17%;
+
+    .contact__left__instagram__marquee {
+        display: flex;
+        will-change: transform;
+        animation: marquee 32s linear infinite;
+    }
+
+    p {
+        font-family: $font-six-caps;
+        font-size: 3.4rem;
+        letter-spacing: 1.2rem;
+        padding: 2rem;
+    }
+}
+
+.contact__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-self: flex-end;
+    justify-self: flex-end;
+    font-family: $font-glamore;
+    padding-right: 4rem;
+    width: 100%;
+    margin: 0 0 5rem 40rem;
+}
+
+.contact__header__title {
+    font-size: 11rem;
+    color: #1f1f1f;
+}
+
+.contact__header__subtitle {
+    font-size: 6rem;
+    color: #636363;
+}
+
+.contact__content {
+    width: 100%;
+}
+
+.contact__content__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact__content__form__input {
+    border: 2px solid #6d6d6d;
+    background-color: transparent;
+    height: 20rem;
+    width: 112rem;
+    font-family: $font-glamore;
+    font-size: 3.5rem;
+    padding-left: 1.4rem;
+}
+
+.contact__content__form__button {
+    width: 112rem;
+    height: 20rem;
+    border: none;
+    background-color: #1f1f1f;
+    color: #f2f2f2;
+    font-family: $font-glamore;
+    font-size: 3.5rem;
+}
+@keyframes marquee {
+    from{transform: translateX(0);}
+    to{transform: translateX(-50%);}
+}

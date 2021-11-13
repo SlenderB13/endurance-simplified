@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,MAAM;EACd,gBAAgB,EAAE,OAAO;EACzB,QAAQ,EAAE,QAAQ;EAClB,aAAa,EAAE,GAAG;EAClB,cAAc,EAAE,IAAI;CACvB",
-    "sources": [
-        "cursor.scss"
-    ],
-    "names": [],
-    "file": "cursor.css"
-}

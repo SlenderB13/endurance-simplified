@@ -1,4 +1,5 @@
 const contactWrapper = document.querySelector('.contact__wrapper')
+const cursor = document.querySelector('.cursor')
 
 console.log(contactWrapper.style.top)
 
@@ -23,5 +24,9 @@ window.addEventListener('mousewheel', (event) => {
   scroll.target = speed * 0.5
 })
 
+window.addEventListener('mousemove', (event) => {
+  cursor.style.top = event.pageY + 'px'
+  cursor.style.left = event.pageX + 'px'
+})
 
 update()

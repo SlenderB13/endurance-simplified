@@ -16,7 +16,7 @@ images.forEach(image => {
     gsap.to(cursor, {scale: 6, duration: 0.3})
   })
   image.addEventListener('mouseleave', () => {
-    gsap.to(cursor, {scale: 0, duration: 0.3})
+    gsap.to(cursor, {scale: 1, duration: 0.3})
   })
 })
 /* update */

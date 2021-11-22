@@ -58,7 +58,6 @@
   display: -ms-flexbox;
   display: flex;
   position: inherit;
-  transform: translateX(-230rem);
 }
 
 .home__titles__title {

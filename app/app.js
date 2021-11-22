@@ -14,10 +14,9 @@ function update() {
   window.requestAnimationFrame(update)
 
   scroll.current = gsap.utils.interpolate(scroll.current, scroll.target, 0.1)
-  scroll.current = gsap.utils.clamp(0, scroll.limit, scroll.current)
 
-  titles.style.left = `-${scroll.current * 1.5}px`
-  gallery.style.left = `-${scroll.current}px`
+  gsap.to(titles, {xPercent: -50, yPercent: -50, x: -scroll.current * 1.5, duration: 0.1})
+  gsap.to(gallery, {xPercent: -50, yPercent: -50, x: -scroll.current, duration: 0.1})
 }
 
 

@@ -64,6 +64,7 @@
   font-family: "Glamore";
   font-size: 18.5rem;
   margin: auto 9.2rem;
+  pointer-events: none;
 }
 
 .home__titles__title::after {

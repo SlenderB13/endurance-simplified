@@ -1,6 +1,7 @@
 const titles = document.querySelector('.home__titles__wrapper')
 const gallery = document.querySelector('.home__gallery__wrapper')
 const cursor = document.querySelector('.cursor')
+const images = document.querySelectorAll('.home__gallery__media__image')
 
 const scroll = {
   current: 0,
@@ -10,6 +11,15 @@ const scroll = {
 
 let speed = 0
 
+images.forEach(image => {
+  image.addEventListener('mouseover', () => {
+    gsap.to(cursor, {scale: 6, duration: 0.3})
+  })
+  image.addEventListener('mouseleave', () => {
+    gsap.to(cursor, {scale: 0, duration: 0.3})
+  })
+})
+/* update */
 function update() {
   window.requestAnimationFrame(update)
 
@@ -19,7 +29,7 @@ function update() {
   gsap.to(gallery, {xPercent: -50, yPercent: -50, x: -scroll.current, duration: 0.1})
 }
 
-
+/* eventlisteners */
 window.addEventListener('mousewheel', (event) => {
   speed += event.deltaY
   scroll.target = speed * 0.5

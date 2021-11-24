@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+.cursor {
+    pointer-events: none;
+}
+
+>>>>>>> e11d503e56f9dbc2466f040548c19a421e15437e
 .nav {
   font-family: "Six Caps";
   width: 100%;
@@ -8,6 +15,10 @@
   display: -ms-flexbox;
   display: flex;
   background-color: #EFE9E2;
+<<<<<<< HEAD
+=======
+  z-index: 3;
+>>>>>>> e11d503e56f9dbc2466f040548c19a421e15437e
 }
 
 .nav__left {
@@ -31,7 +42,11 @@
           flex: 10;
 }
 
+<<<<<<< HEAD
 .nav_center_link {
+=======
+.nav__center__link {
+>>>>>>> e11d503e56f9dbc2466f040548c19a421e15437e
   font-size: 4rem;
 }
 
@@ -51,34 +66,57 @@
   padding: 1rem;
 }
 
+<<<<<<< HEAD
 .nav_list_item {
+=======
+.nav__list__item {
+>>>>>>> e11d503e56f9dbc2466f040548c19a421e15437e
   font-size: 3.5rem;
   margin-left: 1.4rem;
 }
 
 .login {
+<<<<<<< HEAD
     height: 100vh;
 }
+=======
+    height: 120vh;
+}
+
+>>>>>>> e11d503e56f9dbc2466f040548c19a421e15437e
 .login__wrapper {
     flex-direction: column;
     height: inherit;
     width: 100%;
+<<<<<<< HEAD
 }
 
 .login_wrapper_top {
     height: 50%;    
+=======
+    position: absolute;
+}
+
+.login__wrapper__top {
+    height: 80%;    
+>>>>>>> e11d503e56f9dbc2466f040548c19a421e15437e
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
+<<<<<<< HEAD
 .login_wrapper_bottom {
+=======
+.login__wrapper__bottom {
+>>>>>>> e11d503e56f9dbc2466f040548c19a421e15437e
     height: 50%;    
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+<<<<<<< HEAD
 }
 .login__container {
     height: 40rem;
@@ -165,4 +203,88 @@
 
 .login_wrapper_top{
   margin-left: 35rem;
+=======
+    padding-right: 3rem;
+}
+
+.login__left__text {
+    font-family: 'Glamore';
+    font-size: 20rem;
+    transform: rotateZ(-90deg);
+    color: #000;
+}
+
+.login__right {
+    width: 70rem;
+}
+
+.login__form {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Glamore';
+    margin-left: -10rem;
+}
+
+.login__form__input {
+    font-family: 'Glamore';
+    font-size: 2.5rem;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    text-indent: 1rem;
+    height: 10rem;
+}
+
+.login__form__button {
+    font-family: 'Glamore';
+    font-size: 2.5rem;
+    color: #fff;
+    height: 10rem;
+    background-color: #1f1f1f;
+    border: none;
+}
+
+.signup__right {
+    width: 70rem;
+}
+
+.signup__form {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Glamore';
+    margin-right: 10rem;
+}
+
+.signup__left__text {
+    font-family: 'Glamore';
+    font-size: 20rem;
+    transform: rotateZ(-90deg);
+    color: #000;
+}
+
+.stripe {
+    height: 2px;
+    width: 800vw;
+    position: absolute;
+    transform: translate(-50%, -50%) rotateZ(-35deg);
+    left: 120%;
+    background-color: #1f1f1f;
+    opacity: 0.2;
+}
+
+.-signup {
+    background-color: #cecece;
+    border: 1px solid #1f1f1f;
+    color: #000;
+}
+
+.-signup:first-child {
+    background-color: #e7e7e7;
+    border: 1px solid #1f1f1f;
+    color: #000;
+>>>>>>> e11d503e56f9dbc2466f040548c19a421e15437e
 }

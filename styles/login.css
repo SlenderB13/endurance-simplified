@@ -1,0 +1,171 @@
+.cursor {
+    pointer-events: none;
+}
+
+.nav {
+  font-family: "Six Caps";
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #EFE9E2;
+  z-index: 3;
+}
+
+.nav__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+
+.nav__center__link {
+  font-size: 4rem;
+}
+
+.nav__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1rem;
+}
+
+.nav__list__item {
+  font-size: 3.5rem;
+  margin-left: 1.4rem;
+}
+
+.login {
+    height: 120vh;
+}
+
+.login__wrapper {
+    flex-direction: column;
+    height: inherit;
+    width: 100%;
+    position: absolute;
+}
+
+.login__wrapper__top {
+    height: 80%;    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.login__wrapper__bottom {
+    height: 50%;    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3rem;
+}
+
+.login__left__text {
+    font-family: 'Glamore';
+    font-size: 20rem;
+    transform: rotateZ(-90deg);
+    color: #000;
+}
+
+.login__right {
+    width: 70rem;
+}
+
+.login__form {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Glamore';
+    margin-left: -10rem;
+}
+
+.login__form__input {
+    font-family: 'Glamore';
+    font-size: 2.5rem;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    text-indent: 1rem;
+    height: 10rem;
+}
+
+.login__form__button {
+    font-family: 'Glamore';
+    font-size: 2.5rem;
+    color: #fff;
+    height: 10rem;
+    background-color: #1f1f1f;
+    border: none;
+}
+
+.signup__right {
+    width: 70rem;
+}
+
+.signup__form {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Glamore';
+    margin-right: 10rem;
+}
+
+.signup__left__text {
+    font-family: 'Glamore';
+    font-size: 20rem;
+    transform: rotateZ(-90deg);
+    color: #000;
+}
+
+.stripe {
+    height: 2px;
+    width: 800vw;
+    position: absolute;
+    transform: translate(-50%, -50%) rotateZ(-35deg);
+    left: 120%;
+    background-color: #1f1f1f;
+    opacity: 0.2;
+}
+
+.-signup {
+    background-color: #cecece;
+    border: 1px solid #1f1f1f;
+    color: #000;
+}
+
+.-signup:first-child {
+    background-color: #e7e7e7;
+    border: 1px solid #1f1f1f;
+    color: #000;
+}

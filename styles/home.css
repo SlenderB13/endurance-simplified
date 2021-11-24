@@ -32,6 +32,7 @@
   width: 44.7rem;
   height: 28.7rem;
   margin: 4rem 4.34rem;
+  position: relative;
 }
 
 .home__gallery__media__image {

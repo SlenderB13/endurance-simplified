@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE php>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -9,25 +9,8 @@
     <link rel="stylesheet" href="./styles/home.css">
   </head>
   <body>
-    <nav class="nav"> 
-      <div class="nav__left"> </div>
-      <div class="nav__center">
-        <a class="nav__center__link" href="./index.html">endurance north </a>
-      </div>
-      <div class="nav__right"> 
-        <ul class="nav__list"> 
-          <li class="nav__list__item">
-            <a class="nav__list__item__link" href="./pages/login.html">login.</a>
-          </li>
-          <li class="nav__list__item">
-            <a class="nav__list__item__link" href="./pages/home.html">about.</a>
-          </li>
-          <li class="nav__list__item">
-            <a class="nav__list__item__link" href="./pages/contact.html">contact.</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <?php include './partials/nav.php' ?>
+
     <div class="cursor"></div>
     <div class="content" data-template="home">
       <div class="home"> 

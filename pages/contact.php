@@ -9,16 +9,7 @@
     <link rel="stylesheet" href="../styles/contact.css">
   </head>
   <body>
-    <nav class="nav"> 
-      <div class="nav__left"> </div>
-      <div class="nav__center"> <a class="nav__center__link" href="../index.html">endurance north </a></div>
-      <div class="nav__right"> 
-        <ul class="nav__list"> 
-          <li class="nav__list__item"><a class="nav__list__item__link" href="/about">about.</a></li>
-          <li class="nav__list__item"><a class="nav__list__item__link" href="/contact">contact.</a></li>
-        </ul>
-      </div>
-    </nav>
+    <?php include '../partials/nav.php' ?>
     <div class="cursor"></div>
     <div class="content" data-template="contact">
       <div class="contact">

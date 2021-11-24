@@ -116,6 +116,7 @@ body{
     font-family: 'Glamore';
     border-bottom: 1px solid #000;
     background-color: transparent;
+    z-index: 5;
 }
 
 .sign__up__button{

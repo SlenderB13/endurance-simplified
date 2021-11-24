@@ -1,0 +1,128 @@
+body{
+    background-color: #FAFAFA;
+}
+.cursor {
+    pointer-events: none;
+}
+
+.nav {
+  font-family: "Six Caps";
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FAFAFA;
+  z-index: 3;
+}
+
+.nav__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+
+.nav__center__link {
+  font-size: 4rem;
+}
+
+.nav__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1rem;
+}
+
+.nav__list__item {
+  font-size: 3.5rem;
+  margin-left: 1.4rem;
+}
+
+.welcome__text{
+
+    height: 100%;
+    display: flex;
+}
+
+.welcome_text_center{
+    height: 30rem;
+    font-family: 'Glamore';
+    font-size: 5rem;
+    color: #6D6D6D;
+    display: flex;
+    padding: 20rem 0 0 10rem;  
+}
+.signup__container{
+    
+    position: absolute;
+}
+.signup{
+    height: 80rem;
+    width: 90rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20rem;
+    padding-left: 3rem;
+}
+
+.signup__text{
+    display: flex;
+    transform: rotateZ(-90deg);
+}
+
+.signup_text_left{
+    font-size: 25rem;
+    font-family: 'Glamore';
+}
+
+.form__signup{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 90rem;
+    margin-left: -30rem;
+    
+}
+.form__input{
+    width: 90rem;
+    border: none;
+    font-family: 'Glamore';
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+}
+
+.sign__up__button{
+    background-color: #1F1F1F;
+    color: white;
+    height: 8rem;
+    border: none;
+    font-size: 2.5rem;
+    font-family: 'Glamore';
+}

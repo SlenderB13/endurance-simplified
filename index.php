@@ -43,6 +43,7 @@
               <h2 class="home__titles__title">teen </h2>
             </div>
           </div><span class="home__tip__text">scroll to explore our collections</span>
+          <a href="./pages/store.php" class="home__store__link">visit our store</a>
         </div>
       </div>
     </div>

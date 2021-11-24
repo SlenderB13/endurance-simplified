@@ -1,0 +1,168 @@
+.nav {
+  font-family: "Six Caps";
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #EFE9E2;
+}
+
+.nav__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+
+.nav_center_link {
+  font-size: 4rem;
+}
+
+.nav__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1rem;
+}
+
+.nav_list_item {
+  font-size: 3.5rem;
+  margin-left: 1.4rem;
+}
+
+.login {
+    height: 100vh;
+}
+.login__wrapper {
+    flex-direction: column;
+    height: inherit;
+    width: 100%;
+}
+
+.login_wrapper_top {
+    height: 50%;    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.login_wrapper_bottom {
+    height: 50%;    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.login__container {
+    height: 40rem;
+    flex: 1;
+    background-color: red;
+}
+
+.signup__container {
+    height: 40rem;
+    flex: 1;
+    background-color: blue;
+}
+
+.login_left_text{
+    font-family: Glamore;
+    font-size: 10rem;
+    color: #000000;
+    transform: rotate(-90deg);
+}
+
+.login_form_input{
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #000000;
+  padding-top: 1.5rem;
+  width: 43rem;
+  height: 5rem;
+  font-family: 'Six Caps';
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  outline: none;
+}
+
+.login__right{
+  width:7.6rem;
+  height: 1.3rem;
+}
+
+.login__form{
+  font-family:'Glamore';
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+
+}
+
+.login_form_button{
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  margin-top: 1.5rem;
+  font-family: 'Glamore';
+  width: 43rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.signup_left_text{
+  font-family: Glamore;
+  font-size: 10rem;
+  color: #000000;
+  transform: rotate(-90deg);
+}
+
+.signup_form_button{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid black;
+  margin-top: 1.5rem;
+  margin-right: 5rem;
+  font-family: 'Glamore';
+  width: 43rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.login_wrapper_bottom{
+  margin-left: -30rem;
+}
+
+.login_wrapper_top{
+  margin-left: 35rem;
+}

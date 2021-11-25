@@ -1,3 +1,11 @@
+<?php require '../server/connection.php' ?>
+
+<?php 
+  $sql = 'SELECT * FROM products';
+  $result = $pdo->query($sql);
+  $products = $result->fetchAll(PDO::FETCH_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -45,54 +53,20 @@
         </div>
         <div class="store__row">
           <div class="store__row__wrapper">
+            <?php foreach($products as $product): ?>
             <div class="store__product">
               <div class="store__product__header">
-                <h4 class="store__product__title">classic rosé hat</h4>
-                <p class="store__product__price">$ 79.99</p>
+                <h4 class="store__product__title"><?php echo $product['name'] ?></h4>
+                <p class="store__product__price"><?php echo "$ ".$product['price'] ?></p>
               </div>
               <figure class="store__product__figure">
-                <img src="../assets/hat-1.jpg" alt="" class="store__product__image">
+                <img src="<?php echo $product['image']?>" class="store__product__image">
               </figure>
               <div class="store__product__actions">
                 <button class="store__product__button">add to cart</button>
               </div>
             </div>
-            <div class="store__product">
-              <div class="store__product__header">
-                <h4 class="store__product__title">classic rosé hat</h4>
-                <p class="store__product__price">$ 79.99</p>
-              </div>
-              <figure class="store__product__figure">
-                <img src="../assets/hat-1.jpg" alt="" class="store__product__image">
-              </figure>
-              <div class="store__product__actions">
-                <button class="store__product__button">add to cart</button>
-              </div>
-            </div>
-            <div class="store__product">
-              <div class="store__product__header">
-                <h4 class="store__product__title">classic rosé hat</h4>
-                <p class="store__product__price">$ 79.99</p>
-              </div>
-              <figure class="store__product__figure">
-                <img src="../assets/hat-1.jpg" alt="" class="store__product__image">
-              </figure>
-              <div class="store__product__actions">
-                <button class="store__product__button">add to cart</button>
-              </div>
-            </div>
-            <div class="store__product">
-              <div class="store__product__header">
-                <h4 class="store__product__title">classic rosé hat</h4>
-                <p class="store__product__price">$ 79.99</p>
-              </div>
-              <figure class="store__product__figure">
-                <img src="../assets/hat-1.jpg" alt="" class="store__product__image">
-              </figure>
-              <div class="store__product__actions">
-                <button class="store__product__button">add to cart</button>
-              </div>
-            </div>
+            <?php endforeach; ?>
           </div>
           </div>
           </div>
@@ -101,6 +75,6 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="../app/app.js"></script>
+    <script src="../app/store.js"></script>
   </body>
 </html>

@@ -14,6 +14,9 @@
           <li class="nav__list__item">
             <a class="nav__list__item__link" href="../pages/contact.php">contact.</a>
           </li>
+          <li class="nav__list__item">
+            <a class="nav__list__item__link" href="../pages/cart.php">cart.</a>
+          </li>
         </ul>
       </div>
     </nav>

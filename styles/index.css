@@ -163,7 +163,6 @@ img {
   pointer-events: none;
   z-index: 5;
   mix-blend-mode: difference;
-  transition: all 10ms ease-in-out;
 }
 
 

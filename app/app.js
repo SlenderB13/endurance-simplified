@@ -47,11 +47,8 @@ function update() {
     if(this.direction) {
       if(this.direction === 'left') {
         if(this.imageRight < window.screenLeft) {
-          console.log(this.direction)
         }
-        console.log(this.direction)
       } else if(this.direction === 'right') {
-        console.log(this.direction)
       }
     }
 

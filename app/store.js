@@ -6,7 +6,7 @@ const images = document.querySelectorAll('img')
 const scroll = {
   current: 0,
   target: 0,
-  limit: 600
+  limit: 1000
 }
 
 let speed = 0
@@ -38,8 +38,7 @@ function update() {
 
   scroll.current = gsap.utils.interpolate(scroll.current, scroll.target, 0.1)
   scroll.current = gsap.utils.clamp(0, scroll.limit, scroll.current)
-  loginWrapper.style.top = `-${scroll.current}px`
-  stripe.style.top = `-${scroll.current * 0.4}px`
+  storeWrapper.style.left = `-${scroll.current}px`
 }
 
 window.addEventListener('mousewheel', (event) => {

@@ -17,7 +17,7 @@
             <div class="checkout__wrapper">
                 <div class="checkout__cart">
                     <div class="checkout__cart__header">
-                        <h3 class="checkout__cart__header__title">your products:</h3>
+                        <h3 class="checkout__cart__header__title">your cart:</h3>
                     </div>
                     <div class="checkout__cart__content">
                         <div class="product__card">

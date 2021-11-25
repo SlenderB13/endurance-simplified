@@ -57,7 +57,7 @@
 }
 
 .checkout {
-  height: 150vh;
+  height: 160vh;
   font-family: 'Glamore';
 }
 
@@ -76,7 +76,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  height: 60rem;
+  height: 100%;
+  margin-top: 10rem;
 }
 
 .checkout__cart__header {
@@ -86,6 +87,8 @@
 .checkout__cart__content {
   display: flex;
   flex-direction: column;
+  height: 30rem;
+  justify-content: space-around;
 }
 
 .product__card {

@@ -112,16 +112,16 @@ span {
 }
 
 .store__row {
-    width: 100%;
+    width: 150%;
     height: 65rem;
 }
 
 .store__row__wrapper {
-    width: 100%;
     height: inherit;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: absolute;
 }
 
 .store__product {
@@ -132,6 +132,7 @@ span {
     align-items: center;
     justify-content: space-evenly;
     border: 1px solid #6d6d6d;
+    flex: 1;
 }
 
 .store__product__header {

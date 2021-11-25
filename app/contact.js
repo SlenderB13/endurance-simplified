@@ -2,8 +2,6 @@ const contactWrapper = document.querySelector('.contact__wrapper')
 const cursor = document.querySelector('.cursor')
 const button = document.querySelector('button')
 
-console.log(contactWrapper.style.top)
-
 const scroll = {
   current: 0,
   target: 0,

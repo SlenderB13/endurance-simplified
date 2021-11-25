@@ -1,0 +1,206 @@
+.nav {
+  font-family: "Six Caps";
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #EFE9E2;
+}
+
+.nav__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+
+.nav__center__link {
+  font-size: 4rem;
+}
+
+.nav__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1rem;
+}
+
+.nav__list__item {
+  font-size: 3.5rem;
+  margin-left: 1.4rem;
+}
+
+.checkout {
+  height: 150vh;
+  font-family: 'Glamore';
+}
+
+.checkout__wrapper {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  position: absolute;
+  padding: 15rem 0 0 6rem;
+}
+
+.checkout__cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 60rem;
+}
+
+.checkout__cart__header {
+  font-size: 8rem;
+}
+
+.checkout__cart__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+  border: 1px solid #1f1f1f;
+}
+
+.product__card__figure {
+  flex: 1;
+  height: 100%;
+  background-color: red;
+}
+
+.product__card__figure__image {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.product__card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 3;
+  padding-left: 1.5rem;
+}
+
+.product__card__info__title {
+  font-size: 3rem;
+}
+
+.product__card__info__price {
+  font-family: 'Six Caps';
+  font-size: 3rem;
+}
+
+.product__card__remove {
+  height: 100%;
+  width: 40rem;
+  flex: 1;
+  background-color: #1f1f1f;
+  color: #fff;
+  border: none;
+  font-family: 'Glamore';
+  font-size: 1.5rem;
+}
+
+.checkout__cart__total {
+  font-family: 'Six Caps';
+  font-size: 6rem;
+  color: #2f2f2f;
+}
+
+.checkout__stripe {
+  border-top: 1px solid #6d6d6d;
+  width: 150%;
+}
+
+/* .checkout__address {
+} */
+
+.checkout__address__form {
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.checkout__address__form__header {
+  font-size: 8rem;
+}
+
+.checkout__address__form__row {
+  display: flex;
+  width: 80rem;
+}
+
+.checkout__address__form__input {
+  border: none;
+  border-bottom: 1px solid #1f1f1f;
+  background-color: transparent;
+  text-indent: 1rem;
+  width: 26rem;
+  font-family: 'Glamore';
+  font-size: 2rem;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.checkout__address__form__input:nth-child(1) {
+  flex: 1;
+}
+
+.checkout__address__form__input:nth-child(2) {
+  flex: 2;
+}
+
+.checkout__address__form__button {
+  height: 10rem;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-family: 'Glamore';
+  font-size: 2rem;
+  border: none;
+}
+
+.checkout__text {
+  font-family: 'Glamore';
+  font-size: 20rem;
+  color: #1f1f1f;
+  position: absolute;
+  top: 50%;
+  left: 133rem;
+  transform: rotateZ(-90deg);
+}

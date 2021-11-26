@@ -12,9 +12,6 @@
             <a class="nav__list__item__link" href="../pages/checkout.php">cart.</a>
           </li>
           <li class="nav__list__item">
-            <a class="nav__list__item__link" href="../pages/home.php">about.</a>
-          </li>
-          <li class="nav__list__item">
             <a class="nav__list__item__link" href="../pages/contact.php">contact.</a>
           </li>
         </ul>

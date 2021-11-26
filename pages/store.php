@@ -63,7 +63,9 @@
                 <img src="<?php echo $product['image']?>" class="store__product__image">
               </figure>
               <div class="store__product__actions">
-                <button class="store__product__button">add to cart</button>
+                <button class="store__product__button">
+                  <a href='checkout.php?id=<?php echo $product['id']; ?>'>add to cart</a>
+                </button>
               </div>
             </div>
             <?php endforeach; ?>

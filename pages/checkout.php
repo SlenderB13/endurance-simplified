@@ -1,3 +1,27 @@
+<?php require '../server/connection.php' ?>
+
+<?php 
+    if(isset($_GET['id'])) {
+        $id = $_GET['id'];
+        $insertQuery = 'INSERT INTO users (items) VALUES ('.$id.');';
+        $insertResult = $pdo->query($insertQuery);
+    }
+
+    if(isset($_GET['id_product'])) {
+        $id_product = $_GET['id_product'];
+        $deleteQuery = 'DELETE FROM users WHERE items='.$id_product.';';
+        $deleteResult = $pdo->query($deleteQuery);
+    }
+
+    $sql = 'SELECT DISTINCT products.id, products.name, products.image, products.price 
+    from products, users
+    WHERE users.items=products.id';
+    $result = $pdo->query($sql);
+    $items = $result->fetchAll(PDO::FETCH_ASSOC);
+
+    $sum = 0;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,21 +44,24 @@
                         <h3 class="checkout__cart__header__title">your cart:</h3>
                     </div>
                     <div class="checkout__cart__content">
-                        <div class="product__card">
+                        <?php foreach($items as $item): ?>
+                        <form method='GET' class="product__card" name=<?php echo $item['id'] ?>>
                             <figure class="product__card__figure">
-                                <img src="" alt="" class='product__card__figure__image'>
+                                <img src=<?php echo $item['image']; ?> alt="" class='product__card__figure__image'>
                             </figure>
                             <div class="product__card__info">
-                                <h4 class="product__card__info__title">classic rosé hat</h4>
-                                <p class="product__card__info__price">$ 79.99</p>
+                                <h4 class="product__card__info__title"><?php echo $item['name'] ?></h4>
+                                <p class="product__card__info__price"><?php echo $item['price'] ?></p>
                             </div>
                             <button class="product__card__remove">
-                                remove
+                                <a href='checkout.php?id_product=<?php echo $item['id']; ?>'>remove</a>
                             </button>
-                        </div>
+                        </form>
+                        <?php $sum += $item['price']; ?>
+                        <?php endforeach; ?>
                     </div>
                     <div class="checkout__cart__total">
-                        <h3 class="checkout__cart__total__text">your total: $ 400.00</h3>
+                        <h3 class="checkout__cart__total__text">your total: $ <?php echo $sum ?></h3>
                     </div>
                 </div>
                 <hr class='checkout__stripe'>

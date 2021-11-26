@@ -102,7 +102,7 @@
 .product__card__figure {
   flex: 1;
   height: 100%;
-  background-color: red;
+  width: 100%;
 }
 
 .product__card__figure__image {

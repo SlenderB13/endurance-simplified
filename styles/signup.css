@@ -1,0 +1,123 @@
+.cursor {
+    pointer-events: none;
+}
+
+.nav {
+  font-family: "Six Caps";
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #EFE9E2;
+  z-index: 3;
+}
+
+.nav__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+
+.nav__center__link {
+  font-size: 4rem;
+}
+
+.nav__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1rem;
+}
+
+.nav__list__item {
+  font-size: 3.5rem;
+  margin-left: 1.4rem;
+}
+
+.signup {
+    height: 120vh;
+}
+
+.signup__wrapper {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    padding: 20rem 0 0 5rem;
+    position: absolute;
+}
+
+.signup__text {
+    font-family: 'Glamore';
+    font-size: 5rem;
+    color: #6d6d6d;
+}
+
+.signup__form__wrapper {
+    height: inherit;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.signup__form__text {
+    font-family: 'Glamore';
+    font-size: 20rem;
+    transform: rotateZ(-90deg);
+    justify-self: flex-start;
+}
+
+.signup__form {
+    height: 65rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -15rem;
+}
+
+.signup__form__input {
+    width: 80rem;
+    border: none;
+    border-bottom: 2px solid #1f1f1f;
+    padding: 1rem;
+    background-color: transparent;
+    font-family: 'Glamore';
+    font-size: 2rem;
+}
+
+.signup__form__button {
+    height: 10rem;
+    width: 80rem;
+    font-family: 'Glamore';
+    font-size: 2rem;
+    background-color: #1f1f1f;
+    color: #EFE9E2;
+    border: none;
+}

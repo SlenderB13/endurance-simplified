@@ -38,7 +38,7 @@
                     <div class="signup__right">
                         <div class="signup__form">
                             <button class="login__form__button -signup">signup with google</button> 
-                            <button class="login__form__button -signup" >signup with e-mail</button> 
+                            <button class="login__form__button -signup" ><a href='./signup.php'>signup with e-mail</a></button> 
                         </div>
                     </div>
                 </div>

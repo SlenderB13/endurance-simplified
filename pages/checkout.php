@@ -51,7 +51,7 @@
                             </figure>
                             <div class="product__card__info">
                                 <h4 class="product__card__info__title"><?php echo $item['name'] ?></h4>
-                                <p class="product__card__info__price"><?php echo $item['price'] ?></p>
+                                <p class="product__card__info__price"><?php echo '$ '.$item['price'] ?></p>
                             </div>
                             <button class="product__card__remove">
                                 <a href='checkout.php?id_product=<?php echo $item['id']; ?>'>remove</a>

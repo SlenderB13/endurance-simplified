@@ -2,10 +2,11 @@ const titles = document.querySelector('.home__titles__wrapper')
 const gallery = document.querySelector('.home__gallery__wrapper')
 const galleryElement = document.querySelector('.home__gallery')
 const cursor = document.querySelector('.cursor')
-const images = document.querySelectorAll('.home__gallery__media__image')
+const images = document.querySelectorAll('.home__gallery__media')
 
-const galleryBounds = galleryElement.getBoundingClientRect()
+const galleryBounds = gallery.getBoundingClientRect()
 const galleryWidth = galleryBounds.width
+const galleryRight = galleryBounds.right
 
 const scroll = {
   current: 0,
@@ -43,12 +44,15 @@ function update() {
     this.imageBounds = image.getBoundingClientRect()
     this.imageWidth = this.imageBounds.width
     this.imageRight = this.imageBounds.right
+    this.imageLeft = this.imageBounds.left
 
     if(this.direction) {
       if(this.direction === 'left') {
         if(this.imageRight < window.screenLeft) {
         }
       } else if(this.direction === 'right') {
+        if(this.imageLeft > window.screenLeft + window.innerWidth) {
+        }
       }
     }
 
